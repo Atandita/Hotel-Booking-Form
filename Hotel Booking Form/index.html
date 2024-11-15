@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <label for="name">UserName:
+                <input type="text" name="username" id="name" required autofocus placeholder="your username" pattern="[a-zA-Z] {3}" title="please enter in more than three letters.">
+                </label>
+                <label for="email">Email:
+                    <input type="email" name="email" id="email" required placeholder="your email" pattern="[a-zA-Z] {3}@[0]{1}[a-zA-Z]{2,}" title="Please enter a Vaild email Address.">
+                </label>
+                <label for="phone">Phone:
+                    <input type="tel" name="phone" id="phone" required placeholder= "Your Phone" pattern="[0-9]{4}[0-9][3]" title="please enter in a phone number in the format ### ### ####">
+                </label>
+                <select name="country">
+                    <option value=""></option>
+                    <option value="India">INDIA</option>
+                    <option value="Uk">UK</option>
+                    <option value="Us">US</option>
+                    <option value="Aus">AUS</option>
+                </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Booking Details:</legend>
+            <label for="date">Date:
+            <input type="date" name="date" min="2024-12-2">
+        </label>
+        <label for="numberofguests">NumberOfGuests:</label>
+            <input type="number" name="numberOfGuests" min="1" max="6">
+            </label>
+
+            <p>Do you Required Meals?</p>
+             <label for="yesmeal">Yes:
+            <input type="radio" name="meals" value="yesmeals">
+             </label>
+             <label>
+            <input type="radio" name="meals" value="nomeals">
+            </label>
+            <br>
+            <label for="balcony">Do You required Balcony:
+            <input type="checkbox" name="balcony" value="yes" checked>
+            </label>
+            <br>
+            <input type="image" src="../button.png" height="50" width="50">
+        </fieldset>
+    </form>
+</body>
+</html>
